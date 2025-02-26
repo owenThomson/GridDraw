@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid Overlay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Image Grid Overlay</h1>
+        <p>Upload an image, apply a customizable grid, and choose the grid's color and thickness!</p>
+
+        <div class="content-wrapper">
+            <div class="controls">
+                <label for="upload">Upload Image:</label>
+                <input type="file" id="upload" accept="image/*">
+
+                <div class="input-group">
+                    <label for="gridSize">Grid Count:</label>
+                    <input type="number" id="gridSize" value="5" min="1" max="20">
+                </div>
+
+                <div class="input-group">
+                    <label for="lineThickness">Line Thickness:</label>
+                    <input type="number" id="lineThickness" value="1" min="1" max="10">
+                </div>
+
+                <div class="input-group">
+                    <label for="gridColor">Grid Color:</label>
+                    <input type="color" id="gridColor" value="#ff0000">
+                </div>
+
+                <button id="applyGridBtn" onclick="drawGrid()">Apply Grid</button>
+                <button id="resetZoomBtn" onclick="resetZoom()">Reset Zoom</button>
+            </div>
+
+            <div class="canvas-container">
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
