@@ -61,7 +61,7 @@ input[type="file"] {
 }
 
 button {
-    background-color: #0d3b66;
+    background-color: #480ca8;
     color: white;
     font-size: 16px;
     padding: 10px;
@@ -72,10 +72,9 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #4cc9f0;
 }
 
-/* Canvas on the right */
 .canvas-container {
     flex-grow: 1;
     display: flex;
@@ -88,4 +87,16 @@ canvas {
     max-width: 100%;
     height: auto;
     background-color: white;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo-container img {
+    max-width: 300px;
+    height: auto;
 }
