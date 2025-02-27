@@ -10,7 +10,9 @@
 
 <body>
     <div class="container">
-        <h1>Image Grid Overlay</h1>
+        <div class="logo-container">
+            <img src="gridraw.png" alt="Grid Logo">
+        </div>
         <p>Upload an image, apply a customizable grid, and choose the grid's color and thickness!</p>
 
         <div class="content-wrapper">
@@ -34,7 +36,10 @@
                 </div>
 
                 <button id="applyGridBtn" onclick="drawGrid()">Apply Grid</button>
-                <button id="resetZoomBtn" onclick="resetZoom()">Reset Zoom</button>
+                <button id="removeGridBtn" onclick="removeGrid()">Remove Grid</button>
+                <!-- <button id="resetZoomBtn" onclick="resetZoom()">Reset Zoom</button> -->
+                <!-- Add a button for gir dtranparency -->
+                <!-- Also add a button to download the image with the grid on top of it -->
             </div>
 
             <div class="canvas-container">
@@ -47,3 +52,6 @@
 </body>
 
 </html>
+
+
+<!-- Once you h ave a grid dave some sort of pixel to grid - know where to zoom based off of "click" of mouse -->
